@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<html lang="ar" dir="rtl">-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are4u</title>
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--    slick slider-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--     <link rel="stylesheet" href="css/arabic.css">-->
+</head>
+
+<body>
+
+    <!--    HEADER SECTION-->
+    <header class="py-3 py-md-4 py-lg-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-2">
+                            <div class="logo-image d-flex justify-content-between align-items-center">
+                                <a href="#">
+                                    <img src="images/logo/logo.png" alt="">
+                                </a>
+                                <i class="fa-solid fa-bars-staggered d-lg-none" onclick="mobileClick()"></i>
+                            </div>
+
+                        </div>
+                        <div class="col-10 d-none d-lg-block">
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="menubar">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="menu-active d-flex align-items-center">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex align-items-center">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                Discover Events
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-bar px-4">
+                                    <div class="search-box">
+                                        <form action="#">
+                                            <input type="text" placeholder="Find Events">
+                                            <button type="submit">
+                                                <img src="images/icons/search.png" alt="">
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="arabic-button">
+                                        Arabic
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="images/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        All Category
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Lip Gloss</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Body Lotion</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Cream</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Garnier</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Wigs Collection
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Today’s Deal
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Offer
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Blog
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+    <!--    INFLUENCER HEAD-->
+    <section class="influencer-head-section py-5">
+        <div class="container">
+            <div class="d-flex bd-highlight align-items-center">
+                <div class="influencer-head-img flex-shrink-1 bd-highlight">
+                    <img src="images/influncer/7.png" alt="Image">
+                </div>
+                <div class="influencer-head-text w-100 bd-highlight">
+                    <h4>Maulana Tariq Jameel</h4>
+                    <p>
+                        Educator, Islamic Scholer, Motivational Speaker
+                    </p>
+                    <div class="py-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Faisalabad, Pakistan</span>
+                    </div>
+                    <div class="influence-head-link mt-2">
+                        <a href="#" class="visit">Visit Website</a>
+                        <a href="#" class="contact">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    INFLUENCER HEAD END-->
+
+    <!--    ABOUT INFLUENCER-->
+    <section class="about-influencer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="about-influencer-left">
+                        <div class="about-influencer-hear d-flex bd-highlight align-items-center">
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="p">About</p>
+                            </div>
+                            <div class="faka-line w-100 bd-highlight"></div>
+                        </div>
+                        <p>
+                            If you hadn’t heard of CreatorIQ before this year, I’d be surprised if you made it to December without the platform’s name becoming known to you. Especially if you’re reading this, because you’ve obviously just now heard of it.
+                        </p>
+                        <p>
+                            Founded in 2014 by Igor Vaks, the platform is something of an anomaly in this fast-growing market. We typically see two types of platforms to review on this site: those that were founded by tech people, and those that were founded by marketing people. In the case of the former, the best ones we’ve seen are those that are good looking, well executed software with some minor deficiencies in features that marketers would want. As for the latter: they’re incredibly full-featured, no stone unturned, but often have some minor deficiencies in the user experience. CreatorIQ was founded by a no-doubt-about-it tech guy—Vaks earned his BS and MS in Systems and Control Engineering and spent his career doing the kinds of things you’d expect with that degree. But I’ll be damned if CreatorIQ doesn’t look like the product of a person who’s lived and breathed marketing for decades.
+                        </p>
+                        <div class="about-influencer-hear d-flex bd-highlight align-items-center">
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="p">Pricing</p>
+                            </div>
+                            <div class="faka-line w-100 bd-highlight"></div>
+                        </div>
+                        <p>
+                            CreatorIQ doesn’t make their pricing public. That said, this isn’t software for the SMB set. The platform was designed—and is used by—companies with deep pockets. To give you an idea of who’s using CreatorIQ: the smallest clients in their published list are earning around $100m annually. That doesn’t mean it’s a requirement, it’s just a guideline to understand the niche they’re serving.
+                        </p>
+                        <div class="about-influencer-hear d-flex bd-highlight align-items-center">
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="p">Details</p>
+                            </div>
+                            <div class="faka-line w-100 bd-highlight"></div>
+                        </div>
+                        <p>
+                            There’s a lot going on in CreatorIQ, so much so that it would be difficult to cover it all in this limited space. If, at the end of reading this, you find yourself asking “Yeah, but does it do this thing that another platform I know of does?”—the answer is yes. Yes, it does. On with the show:
+                        </p>
+                        <p>
+                            As with any end-to-end platform, use of the product starts with influencer discovery. CreatorIQ integrates directly with social platform APIs, and its AI-powered algorithm analyses over 1 billion public (yes, billion) social accounts and their content, checking everything against a set of criteria to see if they merit being added into the platform database. There are currently more than 15 million creator accounts indexed on the system, which sounds like an awful lot to sift through. But that’s where the AI comes in and saves the day.
+                        </p>
+
+                        <div class="about-influencer-hear d-flex bd-highlight align-items-center mt-3">
+                            <div class="flex-shrink-1 bd-highlight">
+                                <p class="follower">Follower On Social Media</p>
+                            </div>
+                            <div class="faka-line w-100 bd-highlight"></div>
+                        </div>
+                        <div class="influencer-social-icon">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="about-influencer-right">
+                        <div class="influency-agency">
+                            <div class="influenct-agency-img">
+                                <img src="images/influncer/8.png" alt="image">
+                            </div>
+
+                            <div class="influenc-agency-head py-4">
+                                <h6>Reviews</h6>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(13)</span>
+                                </div>
+                            </div>
+
+                            <div class="influenc-agency-head py-4">
+                                <h6>Services Type</h6>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Digital Marketing
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Social Media Marketing
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        SEO ( Search Engine Optimization)
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Branding
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="influenc-agency-head py-4">
+                                <h6>Pricing</h6>
+                                <a href="#" class="send-request">
+                                   <i class="fa-solid fa-paper-plane"></i>
+                                    On request
+                                </a>
+                            </div>
+                            
+                            <div class="book-your-booth">
+                                <h4>Book Your Booth Space for Business exhibition</h4>
+                               <div class="mt-4 d-flex justify-content-between">
+                                    <a href="#">Book Now</a>
+                                <a href="#" class="view-plan">View Plan</a>
+                               </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ABOUT INFLUENCER END-->
+
+    <section class="about-influencer">
+        <div class="container">
+            <div class="about-influencer-right">
+                <h6 class="border-bottom">Related Influencer</h6>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                        <div class="influencer-box py-2 d-flex align-content-between flex-wrap">
+                            <div>
+                                <div class="person d-flex bd-highlight p-1">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="flex-shrink-1 bd-highlight">
+                                        <img src="images/influncer/2.png" alt="">
+                                    </div>
+                                    <div class="w-100 bd-highlight">
+                                        <h6>Ustadh Nouman Ali Khan</h6>
+                                        <p>Islamic lacturar</p>
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <p>Thursday, 13 Apr 2022</p>
+                                    <h6>
+                                        Services Offered:Discovery, Automated Recruiting, Influencer Relationship, More..
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center audience px-2">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Audience 150M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                        <div class="influencer-box py-2 d-flex align-content-between flex-wrap">
+                            <div>
+                                <div class="person d-flex bd-highlight p-1">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="flex-shrink-1 bd-highlight">
+                                        <img src="images/influncer/2.png" alt="">
+                                    </div>
+                                    <div class="w-100 bd-highlight">
+                                        <h6>Ustadh Nouman Ali Khan</h6>
+                                        <p>Islamic lacturar</p>
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <p>Thursday, 13 Apr 2022</p>
+                                    <h6>
+                                        Services Offered:Discovery, Automated Recruiting, Influencer Relationship, More..
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center audience px-2">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Audience 150M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                        <div class="influencer-box py-2 d-flex align-content-between flex-wrap">
+                            <div>
+                                <div class="person d-flex bd-highlight p-1">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="flex-shrink-1 bd-highlight">
+                                        <img src="images/influncer/2.png" alt="">
+                                    </div>
+                                    <div class="w-100 bd-highlight">
+                                        <h6>Ustadh Nouman Ali Khan</h6>
+                                        <p>Islamic lacturar</p>
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <p>Thursday, 13 Apr 2022</p>
+                                    <h6>
+                                        Services Offered:Discovery, Automated Recruiting, Influencer Relationship, More..
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center audience px-2">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Audience 150M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                        <div class="influencer-box py-2 d-flex align-content-between flex-wrap">
+                            <div>
+                                <div class="person d-flex bd-highlight p-1">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="flex-shrink-1 bd-highlight">
+                                        <img src="images/influncer/2.png" alt="">
+                                    </div>
+                                    <div class="w-100 bd-highlight">
+                                        <h6>Ustadh Nouman Ali Khan</h6>
+                                        <p>Islamic lacturar</p>
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <p>Thursday, 13 Apr 2022</p>
+                                    <h6>
+                                        Services Offered:Discovery, Automated Recruiting, Influencer Relationship, More..
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center audience px-2">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Audience 150M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--    NOTIFICATION SECTION-->
+    <section class="notification-section py-5">
+        <div class="container">
+            <div class="notify-container py-5 px-3">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="notification-left">
+                            <h4>Get Notification</h4>
+                            <p>
+                                Subscribe here to get latest News and Update
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="notification-right">
+                            <div class="noti-form">
+                                <form action="">
+                                    <div class="noti-relative">
+                                        <input type="text" placeholder="Email">
+                                        <button class="noti-button" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    NOTIFICATION SECTION END-->
+
+
+
+    <!--    FOOTER-->
+    <footer class="py-5">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <div class="logo mb-3">
+                                <a href="#">
+                                    <img src="images/logo/logo2.png" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                6757 King Fahd Rd, Al Olaya, Riyadh 12211, Saudi Arabia
+                            </p>
+
+                            <ul>
+                                <li class="mt-1">
+                                    <i class="footer-feather" data-feather="phone-call"></i>
+                                    <span>+966 55 117 5959 </span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="footer-feather" data-feather="mail"></i>
+                                    <span>info@workerksa.com</span>
+                                </li>
+
+                            </ul>
+                            <div class="social-icons mt-3">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">About Us</h6>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Sponsor Package</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">TV Sponsor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Services</h6>
+                            <ul>
+                                <li><a href="#">How to find Sponsor</a></li>
+                                <li><a href="#">Find Events</a></li>
+                                <li><a href="#">Find Sponsor</a></li>
+                                <li><a href="#">Top Brand to sponsor</a></li>
+                                <li><a href="#">Find Organizer</a></li>
+                                <li><a href="#">Become Merketer</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6>Update News</h6>
+                            <div class="footer-blog">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-2 flex-shrink-1 bd-highlight">
+                                        <a href="#">
+                                            <img src="images/blog/footer1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2 w-100 bd-highlight">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                        <span>
+                                            Posted 02 Min Ago | 01 April 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-blog">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-2 flex-shrink-1 bd-highlight">
+                                        <a href="#">
+                                            <img src="images/blog/footer1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2 w-100 bd-highlight">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                        <span>
+                                            Posted 02 Min Ago | 01 April 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-blog">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-2 flex-shrink-1 bd-highlight">
+                                        <a href="#">
+                                            <img src="images/blog/footer1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-2 w-100 bd-highlight">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                        <span>
+                                            Posted 02 Min Ago | 01 April 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER END-->
+
+    <!--    COPYRIGHT-->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="copyright-content">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright-left">
+                            <p>@copyright-2022 | All Rights Researved by Sponsor.Incu</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright-right">
+                            <a href="#">
+                                Terms & Condition
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                            <a href="#">
+                                Help
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    COPYRIGHT END-->
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--    slick-->
+    <script src="js/slick.min.js"></script>
+    <!--    mixitup-->
+    <script src="js/mixitup.min.js"></script>
+
+
+
+
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+
+        //  feather icon
+        feather.replace()
+
+        //mixitup
+        $(document).ready(function() {
+            var mixer = mixitup(".mixit-js");
+        });
+
+
+        $('.client_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            dots: true,
+            infinite: false,
+            autoplaySpeed: 2000,
+            nextArrow: $('.next'),
+            prevArrow: $('.prev'),
+            arrows: false,
+        });
+
+
+
+        // slick slider
+        $('.picture_slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            dots: true,
+            infinite: false,
+            autoplaySpeed: 2000,
+            nextArrow: $('.next'),
+            prevArrow: $('.prev'),
+            arrows: true,
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+    </script>
+</body>
+
+</html>
